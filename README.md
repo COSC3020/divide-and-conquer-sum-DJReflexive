@@ -25,3 +25,27 @@ and solve it as we did in the lectures. Give the final $\Theta$ complexity.
 
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
+
+
+# Runtime Analysis Answer:
+
+The time complexity of my divideAndConquerSum() is $\Theta(log(n))$.
+At the beginning of my algorithm, I check to see if the length of the
+array is 0 or 1. If the array is either of these lengths, then the execution
+time will be constant in the best case scenario. However, in the scenerio
+where the length is greater than 1, the complexity remains consistent.
+The algorithm will always divide the array up into thirds, no matter what the
+content of the array is, and recursively call itself until the sub-arrays
+reach the criteria for the base cases.
+
+
+# Sources
+
+- www.w3schools.com: for the quick documentation of the .slice() function
+
+# Plagiarism Acknowledgement
+I certify that I have listed all sources used to complete this exercise, 
+including the use of any Large Language Models. All of the work is my own, 
+except where stated otherwise. I am aware that plagiarism carries severe 
+penalties and that if plagiarism is suspected, charges may be filed against me 
+without prior notice.
