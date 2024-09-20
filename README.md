@@ -38,7 +38,7 @@ The algorithm will always divide the array up into thirds and process
 its own portion of the array until it reaches the base cases where the 
 sub-array size is 0 or 1, in which it is added in a constant time:
 
-$T(n) = 3T(n/3) + O(1)$
+$T(n) = 3T(n/3) + \Theta(1)$
 
 However, we do not necessarily worry about the constant time it takes for 
 the base case to be added, so we will omit it from this analysis:
