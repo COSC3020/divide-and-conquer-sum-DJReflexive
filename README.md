@@ -46,9 +46,9 @@ $T(n) = 3T(n/3) + \Theta(2)$
 - First we expand the recurrence relation:\
     $T(n) = 3(3T(n/9) + \Theta(2)) + \Theta(2)$\
     $T(n) = 9T(n/9) + 3\Theta(2) + \Theta(2)$\
-    $T(n) = 18T(n/18) + 9\Theta(2) + 3\Theta(2) + \Theta(2)$\
+    $T(n) = 18T(n/18) + 9\Theta(2) + 3\Theta(2) + \Theta(2)$
 
-- Then we can generate a pattern:\ 
+- Then we can generate a pattern:\
     $T(n) = 3^k * T(n/3^k) + k * \Theta(2)$
 
 - In order to get T(1), we can plug in $k = log{_3}n$:\
