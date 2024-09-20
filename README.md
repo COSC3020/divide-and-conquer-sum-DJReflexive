@@ -43,20 +43,21 @@ Recurrence Relation for divideAndConquerSum():
 $T(n) = 3T(n/3) + \Theta(2)$
 
 ###### Solving for the time complexity:
-- First we expand the recurrence relation:
-    $T(n) = 3(3T(n/9) + \Theta(2)) + \Theta(2)$
-    $T(n) = 9T(n/9) + 3\Theta(2) + \Theta(2)$
-    $T(n) = 18T(n/18) + 9\Theta(2) + 3\Theta(2) + \Theta(2)$
-- Then we can generate a pattern: 
+- First we expand the recurrence relation:\
+    $T(n) = 3(3T(n/9) + \Theta(2)) + \Theta(2)$\
+    $T(n) = 9T(n/9) + 3\Theta(2) + \Theta(2)$\
+    $T(n) = 18T(n/18) + 9\Theta(2) + 3\Theta(2) + \Theta(2)$\
+
+- Then we can generate a pattern:\ 
     $T(n) = 3^k * T(n/3^k) + k * \Theta(2)$
 
-- In order to get T(1), we can plug in $k = log{_3}n$:
+- In order to get T(1), we can plug in $k = log{_3}n$:\
     $T(n) = n * T(1) + log{_3}n * \Theta(2)$
 
 - We know that the base case for T(1) is a constant time operation, so we 
-    can state that $T(1) = \Theta(1)$:
-    $T(n) = n * \Theta(1) + log{_3}n * \Theta(2)$
-    Simplified:
+    can state that $T(1) = \Theta(1)$:\
+    $T(n) = n * \Theta(1) + log{_3}n * \Theta(2)$\
+    Simplified:\
     $T(n) = \Theta(n) + \Theta(2log{_3}n)$
 
 - In this asymptotic analysis, $\Theta(2log{_3}n)$ is negligible, therefore
