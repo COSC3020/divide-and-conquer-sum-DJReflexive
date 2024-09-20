@@ -33,10 +33,22 @@ The time complexity of my divideAndConquerSum() is $\Theta(log(n))$.
 At the beginning of my algorithm, I check to see if the length of the
 array is 0 or 1. If the array is either of these lengths, then the execution
 time will be constant in the best case scenario. However, in the scenerio
-where the length is greater than 1, the complexity remains consistent.
-The algorithm will always divide the array up into thirds, no matter what the
-content of the array is, and recursively call itself until the sub-arrays
-reach the criteria for the base cases.
+where the length is greater than 1, the complexity increases.
+The algorithm will always divide the array up into thirds and process
+its own portion of the array until it reaches the base cases where the 
+sub-array size is 0 or 1, in which it is added in a constant time:
+
+$T(n) = 3T(n/3) + O(1)$
+
+However, we do not necessarily worry about the constant time it takes for 
+the base case to be added, so we will omit it from this analysis:
+
+$T(n) = 3T(n/3)$
+
+No matter what the content or the order of the array is, the function will 
+recursively call itself until the sub-arrays reach the criteria for the base
+cases, then it is all added back together through the recursive calls to get 
+the final result which is the sum of all the elements in any given array.
 
 
 # Sources
