@@ -39,7 +39,7 @@ its own portion of the array until it reaches the base cases where the
 sub-array size is 0 or 1, in which it is added with two addition calls (hence 
 why $\Theta$ contains the value 2 rather than the value of 1).
 
-Recurrence Relation for divideAndConquerSum():
+Recurrence Relation for divideAndConquerSum():\
 $T(n) = 3T(n/3) + \Theta(2)$
 
 ###### Solving for the time complexity:
