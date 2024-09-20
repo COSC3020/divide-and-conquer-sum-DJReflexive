@@ -40,11 +40,6 @@ sub-array size is 0 or 1, in which it is added in a constant time:
 
 $T(n) = 3T(n/3) + \Theta(1)$
 
-However, we do not necessarily worry about the constant time it takes for 
-the base case to be added, so we will omit it from this analysis:
-
-$T(n) = 3T(n/3)$
-
 No matter what the content or the order of the array is, the function will 
 recursively call itself until the sub-arrays reach the criteria for the base
 cases, then it is all added back together through the recursive calls to get 
