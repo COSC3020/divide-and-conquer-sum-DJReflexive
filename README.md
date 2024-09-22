@@ -61,7 +61,7 @@ $T(n) = 3T(n/3) + \Theta(2)$
     $T(n) = \Theta(n) + \Theta(2log{_3}n)$
 
 - In this asymptotic analysis, $\Theta(2log{_3}n)$ is negligible, therefore
-    the final time complexity is $T(n) = \Theta(n)$
+    the final time complexity is $T(n) \in \Theta(n)$
 
 
 
